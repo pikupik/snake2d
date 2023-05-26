@@ -1,0 +1,70 @@
+body {
+  background-color: salmon;
+}
+
+canvas {
+  border: 1px solid #000;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mobileControls {
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mobileControls button {
+  margin: 5px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /* CSS untuk perangkat dengan lebar maksimal 768px (ukuran mobile) */
+  canvas {
+    width: 80%; /* Mengatur lebar canvas agar sesuai di perangkat smartphone */
+    height: auto;
+    max-width: 400px; /* Batasi lebar maksimum canvas agar tidak terlalu besar di smartphone */
+    top: 40%; /* Memindahkan canvas ke posisi yang lebih tinggi */
+  }
+
+  #mobileControls {
+    top: 70%; /* Memindahkan mobile controls ke posisi yang lebih rendah */
+  }
+
+  h1 {
+    position: relative;
+    top: 20%; /* Tetapkan posisi h1 pada posisi yang sama */
+  }
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
